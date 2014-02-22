@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/logbg"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    
+    
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="25.0dip"
+	android:layout_weight="0.95"
+>
+	<TextView 
+	android:text="闪电注册"
+	android:textSize="18sp"
+	android:textColor="@color/mainclolor"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="left"
+	android:layout_marginTop="35.0dip"
+	/>
+	
+	<TextView 
+	android:text="您可以直接使用邮箱注册或在账号设置界面补填邮箱信息，以方便找回密码"
+	android:textSize="12sp"
+	android:textColor="@drawable/white"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="left"
+	android:layout_marginTop="35.0dip"
+	/>
+	
+	<!-- 用户名 -->
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="35.0dip"
+		android:layout_gravity="center_vertical"
+	>
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_vertical"
+		>
+			<TextView 
+			android:text="用户名"
+			android:textColor="@drawable/white"
+			
+			android:layout_width="60.0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:gravity="center"
+			
+			/>
+			
+			<EditText 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			
+			/>
+		
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- 密码-->
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="20.0dip"
+		android:layout_gravity="center_vertical"
+	>
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_vertical"
+		>
+			<TextView 
+			android:text="密码"
+			android:textColor="@drawable/white"
+			
+			android:layout_width="60.0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:gravity="center"
+			/>
+			
+			<EditText 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:password="true"
+			/>
+		
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- 确认注册 -->
+	
+	<Button 
+		android:id="@+id/reg_reg_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20.0dip"
+		android:layout_gravity="center_vertical"
+		android:gravity="center"
+		android:text="确认注册"
+		android:textSize="18sp"
+		android:textColor="@drawable/white"
+		android:background="@drawable/selector_btn"
+	  	
+	/>
+
+	<Button 
+		android:id="@+id/reg_log_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20.0dip"
+		android:layout_gravity="center_vertical"
+		android:gravity="center"
+		android:text="已有账户，我要登录"
+		android:textSize="18sp"
+		android:textColor="@drawable/white"
+		android:background="@drawable/selector_btn"
+	  	
+	/>
+		
+	
+</LinearLayout>
+	
+<!-- 底部 -->
+<FrameLayout 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@drawable/btn1"
+	android:layout_weight="0.05"
+	android:layout_gravity="bottom"
+>
+	<ImageView 
+		android:scaleType="fitCenter"
+		android:id="@+id/reg_back_btn"
+		android:layout_width="40.0dip"
+		android:layout_height="40.0dip"
+		android:layout_gravity="left"
+		android:src="@drawable/log_back"
+		android:clickable="true"
+		android:layout_marginLeft="0.0dip"
+	/>
+	
+	<ImageView
+		android:scaleType="fitCenter"
+		android:id="@+id/reg_ok_btn"
+		android:layout_width="40.0dip"
+		android:layout_height="40.0dip"
+		android:layout_gravity="right"
+		android:src="@drawable/log_ok"
+		android:clickable="true"
+		android:layout_marginRight="0.0dip"
+		
+	/>	
+	
+</FrameLayout>
+	
+
+</LinearLayout>

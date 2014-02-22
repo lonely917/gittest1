@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/mainclolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/btn_return"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="5dp"
+		    android:onClick="onClickForBtnReturn"/>	
+		    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置昵称"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+   	 	android:orientation="vertical"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:layout_weight="1"
+  	>
+  		<EditText 
+  			android:id="@+id/setting_nickname_edittext"
+  			android:layout_marginLeft="20.0dip"
+  			android:layout_marginRight="20.0dip"
+  			android:layout_marginTop="20.0dip"
+  			android:layout_width="fill_parent"
+  			android:layout_height="45.0dip"
+  			android:maxLength="15"
+  			
+  			style="@style/my_edittext_style"/>
+  		
+  		<TextView
+  			android:text="彰显个性,设置一个新的昵称吧!"
+  			android:textColor="@color/data"
+  			android:textSize="16.0dip"
+  			android:layout_marginLeft="30.0dip"
+  			android:layout_marginTop="5.0dip"
+  			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+  		/>
+  		
+  		<Button
+  			android:id="@+id/setting_nickname_affirm_btn"
+  			style="@style/button_style_3"
+  			android:layout_width="150.0dip"
+  			android:layout_gravity="center"
+  			android:layout_marginTop="40.0dip"
+  			android:layout_height="40.0dip"
+  			android:text="确定"
+  			/>
+  	</LinearLayout>
+    
+</LinearLayout>

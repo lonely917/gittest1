@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/mainclolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+	
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_page4"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+        
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_marginTop="20dp">
+	
+		<!-- 第一个白框开始 -->
+     	 	<LinearLayout
+			android:gravity="center_vertical" 
+			android:orientation="vertical"
+			android:background="@drawable/shape_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginTop="7.0dip" 
+			android:layout_marginRight="10.0dip">
+				<!-- 个人名片 -->
+				<LinearLayout 
+				android:id="@+id/setting_personInfo_layout"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+    			android:layout_height="50.0dip"
+				android:background="@drawable/selector1">
+					
+					<TextView 
+						android:text="个人名片"
+						android:textSize="16.0dip"
+						android:textColor="@drawable/black"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip"
+					/>
+					<ImageView
+						android:id="@+id/setting_head_imageview"
+						android:layout_width="30.0dip"
+						android:layout_height="30.0dip"
+						android:scaleType="fitCenter"
+						android:src="@drawable/test_img"
+						android:layout_weight="1.0"
+        				android:layout_marginRight="15.0dip"
+					/>
+					<ImageView
+						android:src="@drawable/setting_arrow"
+						android:layout_width="15.0dip"
+				        android:layout_height="15.0dip"
+				        android:layout_marginRight="10.0dip"
+					/>
+						
+			</LinearLayout>
+				
+			   <View 
+	           android:background="@drawable/shape_line" 
+	           android:layout_width="fill_parent" 
+	           android:layout_height="1.0px" />
+	           
+	           <!-- 个性签名 -->
+	           <LinearLayout
+	           android:id="@+id/setting_sign_layout"
+               android:gravity="center_vertical" 
+               android:orientation="horizontal" 
+               android:layout_width="fill_parent" 
+               android:layout_height="50.0dip"
+               android:clickable="true"
+			   android:background="@drawable/selector1"
+			   >
+               	<TextView 
+						android:text="收货地址"
+						android:textSize="16.0dip"
+						android:textColor="@drawable/black"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip"
+					/>
+				<TextView
+						android:id="@+id/setting_sign_textview"
+						android:text="北京市海淀区中关村南大街5号北京理工大学"
+						android:textSize="14.0dip"
+						android:textColor="@color/data"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:layout_marginRight="10.0dip"
+						android:layout_marginLeft="10.0dip"
+					/>
+				<ImageView
+						android:src="@drawable/setting_arrow"
+						android:layout_width="15.0dip"
+				        android:layout_height="15.0dip"
+				        android:layout_marginRight="10.0dip"
+					/>
+               </LinearLayout>
+      		</LinearLayout>
+      		<!-- 第一个白框结束 -->
+      		
+      		<!-- 第三个白框开始 -->
+      		<LinearLayout
+			android:gravity="center_vertical"
+			android:orientation="vertical"
+			android:background="@drawable/shape_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginTop="10.0dip" 
+			android:layout_marginRight="10.0dip">
+				<!-- 意见反馈 -->
+				<LinearLayout 
+				android:id="@+id/setting_feedback_layout"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+    			android:layout_height="50.0dip"
+				android:background="@drawable/selector1">
+					
+					<TextView
+						android:text="意见反馈"
+						android:textSize="16.0dip"
+						android:textColor="@drawable/black"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip"
+						android:layout_weight="1.0"
+					/>
+					
+					<ImageView
+						android:src="@drawable/setting_arrow"
+						android:layout_width="15.0dip"
+				        android:layout_height="15.0dip"
+				        android:layout_marginRight="10.0dip"
+					/>
+						
+				</LinearLayout>
+				
+				<View 
+	           android:background="@drawable/shape_line" 
+	           android:layout_width="fill_parent" 
+	           android:layout_height="1.0px" />
+	           
+				<!-- 关于 -->
+				<LinearLayout 
+				android:id="@+id/setting_about_layout"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+    			android:layout_height="50.0dip"
+				android:background="@drawable/selector1">
+					
+					<TextView
+						android:text="关于"
+						android:textSize="16.0dip"
+						android:textColor="@drawable/black"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip"
+						android:layout_weight="1.0"
+					/>
+					
+					<ImageView
+						android:src="@drawable/setting_arrow"
+						android:layout_width="15.0dip"
+				        android:layout_height="15.0dip"
+				        android:layout_marginRight="10.0dip"
+					/>
+						
+				</LinearLayout>
+      		</LinearLayout>
+      		<!-- 第三个白框结束 -->
+      		
+	</LinearLayout>
+	
+</LinearLayout>

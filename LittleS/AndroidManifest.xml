@@ -1,0 +1,156 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.littles"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name=".AppStart"
+            android:label="@string/title_activity_app_start" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".List"
+            android:label="@string/title_activity_list" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page1"
+            android:label="@string/title_activity_list1"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page2"
+            android:label="@string/title_activity_page2" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page3"
+            android:label="@string/title_activity_page3" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page4"
+            android:label="@string/title_activity_page4" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubForPage1"
+            android:label="@string/title_activity_sub_for_page1" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Group1"
+            android:label="@string/title_activity_group1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ActivityGroup" />
+        </activity>
+        <activity
+            android:name=".Group2"
+            android:label="@string/title_activity_group2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ActivityGroup" />
+        </activity>        
+        <activity
+            android:name=".ShareActivity"
+            android:label="@string/title_activity_share" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RouteActivity"
+            android:label="@string/title_activity_route" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TransportActivity"
+            android:label="@string/title_activity_transport" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetNickNameActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetSignActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetPersonalInfoActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page2_2"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogAndRegActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

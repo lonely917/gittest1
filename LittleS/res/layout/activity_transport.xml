@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout4transport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map2" >
+
+    <RelativeLayout
+        android:id="@+id/title_transportpage"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/btn_return"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="5dp"
+		    android:onClick="onClickForBtnReturn"/>	
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交通路线"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+         android:paddingBottom="10dp">
+	    <ImageView
+	        android:id="@+id/tranchoice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:src="@drawable/tran_choice"
+	        android:onClick="onClickForBtnReturn"
+	       />        
+    </RelativeLayout>
+
+
+</RelativeLayout>

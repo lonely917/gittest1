@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/mainclolor">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blue"
+            android:visibility="gone"
+            >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >   
+        </FrameLayout>
+
+        <!-- <RadioGroup -->
+        <!-- android:id="@+id/tab_radiogroup" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="bottom" -->
+        <!-- android:background="@drawable/tab_bg2" -->
+        <!-- android:gravity="center_vertical" -->
+        <!-- android:orientation="horizontal" -->
+        <!-- android:layout_alignParentBottom="true" > -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/radio_button_one" -->
+        <!-- android:layout_marginTop="2.0dip" -->
+        <!-- android:checked="true" -->
+        <!-- android:drawableTop="@drawable/tab_weixin_normal" -->
+        <!-- style="@style/tab_button_bottom" -->
+        <!-- android:text="学习进度" /> -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/radio_button_two" -->
+        <!-- android:layout_marginTop="2.0dip" -->
+        <!-- android:drawableTop="@drawable/tab2" -->
+        <!-- style="@style/tab_button_bottom" -->
+        <!-- android:text="考试成绩" /> -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/radio_button_three" -->
+        <!-- android:layout_marginTop="2.0dip" -->
+        <!-- android:drawableTop="@drawable/tab3" -->
+        <!-- style="@style/tab_button_bottom" -->
+        <!-- android:text="证书发放" /> -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/radio_button_tour" -->
+        <!-- android:layout_marginTop="2.0dip" -->
+        <!-- android:drawableTop="@drawable/tab4" -->
+        <!-- style="@style/tab_button_bottom" -->
+        <!-- android:text="费用缴纳" /> -->
+
+
+        <!-- </RadioGroup> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/tabbar" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:background="@drawable/tab_bg2" > -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/tabbutton1" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="0dp" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/tab_weixin_normal" > -->
+<!--             </Button> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/tabbutton2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="0dp" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/tab_find_frd_normal" > -->
+<!--             </Button> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/tabbutton3" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/tab_find_frd_normal" > -->
+<!--             </Button> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/tabbutton4" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/tab_find_frd_normal" > -->
+<!--             </Button> -->
+            
+<!--         </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"            
+            android:visibility="visible"
+            android:gravity="bottom"
+            >
+        	
+           <LinearLayout
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_marginTop="10dp"
+              	android:layout_weight="1">               	
+
+                <ImageView
+                    android:id="@+id/img_tab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tab_1" 
+                    android:layout_marginBottom="0dp"
+                    android:adjustViewBounds="true"/>
+
+           
+        	 </LinearLayout>
+        	 
+        	<LinearLayout
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_marginTop="5dp"
+              	android:layout_weight="1">               	
+                <ImageView
+            		android:id="@+id/img_tab2"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"        	     	
+        			android:scaleType="fitCenter"
+        			android:clickable="true"
+        			android:src="@drawable/tab2" 
+        			android:adjustViewBounds="true"/>
+             
+        	 </LinearLayout>
+        	 <LinearLayout
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_marginTop="5dp"
+              	android:layout_weight="1">               	
+                <ImageView
+            		android:id="@+id/img_tab3"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"        	     	
+        			android:scaleType="fitCenter"
+        			android:clickable="true"
+        			android:src="@drawable/tab3" 
+        			android:adjustViewBounds="true"/>
+             
+        	 </LinearLayout>
+        	 
+        	<LinearLayout
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_marginTop="5dp"
+              	android:layout_weight="1">               	
+                <ImageView
+            		android:id="@+id/img_tab4"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"        	     	
+        			android:scaleType="fitCenter"
+        			android:clickable="true"
+        			android:src="@drawable/tab4" 
+        			 android:adjustViewBounds="true"/>
+              
+        	 </LinearLayout>        
+          
+        </LinearLayout>     	
+
+
+
+    </RelativeLayout>
+
+</TabHost>

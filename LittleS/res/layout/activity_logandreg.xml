@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/logbg"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+   
+   
+<LinearLayout 
+  	android:orientation="vertical"
+  	android:gravity="center_vertical"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+>
+  
+  
+    <LinearLayout 
+  	android:orientation="vertical"
+  	android:gravity="center_vertical"
+  	android:layout_width="match_parent"
+  	android:layout_marginLeft="50.0dip"
+  	android:layout_marginRight="50.0dip"
+  	android:layout_height="wrap_content"
+  	>
+
+	<LinearLayout 
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:layout_width="match_parent"
+	android:layout_weight="0.75"
+	android:layout_height="120.0dip"
+	>
+		<Button 
+			android:id="@+id/logreg_Log_btn"
+		  	android:layout_width="match_parent"
+		  	android:layout_height="match_parent"
+		  	android:layout_gravity="left"
+		  	android:paddingRight="10.0dip"	  	
+		  	android:text="用户登录"
+		  	android:gravity="bottom|center_horizontal"
+		  	android:paddingBottom="30dp"
+		  	android:layout_weight="0.5"
+		  	android:background="@drawable/selector_log"
+	  	/>
+	  	<Button
+	  		android:id="@+id/logreg_Reg_btn"
+		  	android:layout_width="match_parent"
+		  	android:layout_height="match_parent"
+		  	android:layout_gravity="right"
+		  	android:gravity="bottom|center_horizontal"
+		  	android:paddingBottom="30dp"
+		  	android:text="闪电注册"
+		  	android:background="@drawable/selector_reg"
+		  	android:layout_weight="0.5"
+	  	/>
+	
+	</LinearLayout>
+	
+	 <Button 
+	 	android:id="@+id/logreg_Around_btn"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	android:gravity="center"
+	  	android:text="随便看看"
+	  	android:layout_weight="0.25"
+	  	android:background="@drawable/selector_btn"
+	  	android:layout_marginTop="10dp"
+	 /><!-- android:background="@color/LogMainColor"  -->
+  
+  </LinearLayout>
+  
+</LinearLayout>
+   
+</LinearLayout>

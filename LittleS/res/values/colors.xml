@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <drawable name="darkgray">#404040ff</drawable>
+  
+  <drawable name="red">#ff00ff</drawable>
+  <drawable name="green">#0ff0ff</drawable>
+  <drawable name="lightgray">#c0c0c0ff</drawable>
+  
+  <drawable name="yellow">#ffFF33ff</drawable>
+  <drawable name="blue">#00ffff</drawable>
+  <drawable name="gray">#808080ff</drawable>
+  <drawable name="magenta">#ff6699ff</drawable>
+  <drawable name="cyan">#66ffffff</drawable>
+  <drawable name="black">#000000</drawable> 
+  <drawable name="white">#FFFFFF</drawable> 
+  
+  <color name="TextColor">#FFFFFF</color>
+  <color name="bgColor">#000000</color>  
+  
+  <color name="mainclolor">#F4EbE2</color>
+  <color name="maincolor2">#decccc</color>
+  <color name="mainclolor3">#754255</color>
+  <color name="comcolor">#fd6300</color>
+  <color name="addedcolor1">#000000</color>
+  <color name="addedcolor2">#6f6f6f</color>
+
+  <color name="MainColor_1">#DECCCC</color>
+  <color name="MainColor_2">#754255</color>
+  <color name="LogMainColor">#FD6300</color>
+  <color name="PaintColor">#6F6F6F</color>
+  <color name="PopUpBackColor">#B00000</color>
+  <color name="PureColor_1">#D3D3D3</color>
+  <color name="PureColor_2">#A8A8A8</color>
+  <color name="PureColor_3">#C8C8C8</color>
+  <color name="data">#ff666666</color>
+  <color name="silver">#C0C0C0</color><!--银色 -->  
+     
+  <color name= "btnbg">#f3f3f3</color><!-- 浅灰色 -->
+</resources>

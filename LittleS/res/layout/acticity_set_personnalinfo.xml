@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/mainclolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+        
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/btn_return"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="5dp"
+		    android:onClick="onClickForBtnReturn"/>
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	>
+		<!-- 第一个白框开始 -->
+     	 	<LinearLayout
+			android:gravity="center_vertical" 
+			android:orientation="vertical"
+			android:background="@drawable/shape_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginTop="7.0dip" 
+			android:layout_marginRight="10.0dip">
+				<!-- 设置头像 -->
+				<LinearLayout 
+				android:id="@+id/set_head_layout"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+    			android:layout_height="70.0dip"
+				android:background="@drawable/selector1">
+					
+					<ImageView
+						android:id="@+id/set_head_imageview"
+						android:layout_width="30.0dip"
+						android:layout_height="30.0dip"
+						android:scaleType="fitCenter"
+						android:src="@drawable/test_img"
+        				android:layout_marginLeft="10.0dip"
+					/>
+					
+					<TextView 
+						android:text="设置头像"
+						android:textSize="18.0dip"
+						android:textColor="@drawable/black"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip"
+						android:layout_weight="1.0"
+					/>
+					
+					<ImageView
+						android:src="@drawable/setting_arrow"
+						android:layout_width="15.0dip"
+				        android:layout_height="15.0dip"
+				        android:layout_marginRight="10.0dip"
+					/>
+				</LinearLayout>
+			</LinearLayout>
+			<!-- 第一个白框结束 -->
+			
+			<LinearLayout
+			android:gravity="center_vertical" 
+			android:orientation="vertical"
+			android:background="@drawable/shape_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginTop="7.0dip" 
+			android:layout_marginRight="10.0dip">
+				<!-- 昵称 -->
+				<LinearLayout 
+				android:id="@+id/set_nickname_layout"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+    			android:layout_height="50.0dip"
+				android:background="@drawable/selector1">
+					<TextView
+						android:text="昵称"
+						android:textSize="16.0dip"
+						android:textColor="@color/data"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip"
+					/>
+					
+					<TextView
+						android:id="@+id/set_nickname_textview"
+						android:text="^_^"
+						android:textSize="16.0dip"
+						android:textColor="@drawable/black"
+						android:gravity="center_vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="20.0dip"
+						android:layout_weight="1.0"
+					/>
+					
+					<ImageView
+						android:src="@drawable/setting_arrow"
+						android:layout_width="15.0dip"
+				        android:layout_height="15.0dip"
+				        android:layout_marginRight="10.0dip"
+					/>
+				</LinearLayout>
+				
+				<View 
+	           android:background="@drawable/shape_line" 
+	           android:layout_width="fill_parent" 
+	           android:layout_height="1.0px" />
+	           
+	           </LinearLayout>
+     	 	
+	
+	</LinearLayout>
+    
+</LinearLayout>

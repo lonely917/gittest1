@@ -1,0 +1,589 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:background="@color/mainclolor"
+    android:id="@+id/layout4page3" >
+
+    <RelativeLayout
+        android:id="@+id/title_page3"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_page3"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goods1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_page3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list1"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/decrease1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num1"
+            android:clickable="true"
+            android:src="@drawable/icon_left" />        
+        
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+        
+        <ImageView
+            android:id="@+id/increase1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/num1"
+            android:clickable="true"
+            android:src="@drawable/icon_right" />  
+            
+        <ImageView
+            android:id="@+id/fav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share1"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_fav2" />
+                
+        <ImageView
+            android:id="@+id/share1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/delete1"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/icon_share" 
+            android:onClick="OnClickForShare"/>
+
+        <ImageView
+             android:id="@+id/delete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_del" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goods2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goods1"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list2"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/decrease2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num2"
+            android:clickable="true"
+            android:src="@drawable/icon_left" />   
+            
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+	
+        <ImageView
+            android:id="@+id/increase2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/num2"
+            android:clickable="true"
+            android:src="@drawable/icon_right" />   
+            
+        <ImageView
+		    android:id="@+id/fav2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share2"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_fav2" />
+		
+        <ImageView
+            android:id="@+id/share2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/delete2"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/icon_share" 
+            android:onClick="OnClickForShare"/>
+                
+        <ImageView
+            android:id="@+id/delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_del" />
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:id="@+id/goods3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goods2"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list3"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/decrease3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num3"
+            android:clickable="true"
+            android:src="@drawable/icon_left" />   
+            
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+	
+        <ImageView
+            android:id="@+id/increase3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/num3"
+            android:clickable="true"
+            android:src="@drawable/icon_right" />   
+
+		<ImageView
+		    android:id="@+id/fav3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share3"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_fav2" />
+		        
+        <ImageView
+            android:id="@+id/share3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/delete3"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/icon_share" 
+            android:onClick="OnClickForShare"/>
+                
+        <ImageView
+            android:id="@+id/delete3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_del" />
+    </RelativeLayout>
+
+    
+     <RelativeLayout
+        android:id="@+id/goods4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goods3"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list4"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/decrease4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num4"
+            android:clickable="true"
+            android:src="@drawable/icon_left" />   
+            
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+	
+        <ImageView
+            android:id="@+id/increase4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/num4"
+            android:clickable="true"
+            android:src="@drawable/icon_right" />   
+		
+		<ImageView
+		    android:id="@+id/fav4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share4"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_fav2" />
+        
+        <ImageView
+            android:id="@+id/share4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/delete4"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/icon_share" 
+            android:onClick="OnClickForShare"/>
+                
+        <ImageView
+            android:id="@+id/delete4" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_del" />
+    </RelativeLayout>
+
+       <RelativeLayout
+        android:id="@+id/goods5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goods4"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list5"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/decrease5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num5"
+            android:clickable="true"
+            android:src="@drawable/icon_left" />   
+            
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+	
+        <ImageView
+            android:id="@+id/increase5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/num5"
+            android:clickable="true"
+            android:src="@drawable/icon_right" />   
+
+		<ImageView
+		    android:id="@+id/fav5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share5"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_fav2" />        
+        
+        <ImageView
+            android:id="@+id/share5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/delete5"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/icon_share" 
+            android:onClick="OnClickForShare"/>
+                
+        <ImageView
+            android:id="@+id/delete5"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_del" />
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:id="@+id/goods6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goods5"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list6"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/tmp_pic" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/decrease6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num6"
+            android:clickable="true"
+            android:src="@drawable/icon_left" />   
+            
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+	
+        <ImageView
+            android:id="@+id/increase6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/num6"
+            android:clickable="true"
+            android:src="@drawable/icon_right" />   
+		
+		<ImageView
+		    android:id="@+id/fav6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share6"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_fav2" />
+		
+        <ImageView
+            android:id="@+id/share6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/delete6"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/icon_share" 
+            android:onClick="OnClickForShare"/>
+                
+        <ImageView
+            android:id="@+id/delete6"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/icon_del" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/icon_left" 
+            android:layout_toLeftOf="@+id/goodspagenum"/>   
+            
+        <TextView
+            android:id="@+id/goodspagenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal" />
+	
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/icon_right" 
+            android:layout_toRightOf="@+id/goodspagenum"/>           
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rightdowncorner_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <Button 
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/string1_activity_page3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"/>
+        
+        <Button 
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/buy_button"
+            android:text="@string/string2_activity_page3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"/>
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/layout4page3"
+        android:src="@drawable/icon_sum"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout4page3"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/icon_car"/>
+</RelativeLayout>

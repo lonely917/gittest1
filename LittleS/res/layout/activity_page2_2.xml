@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sel_gift_layout_2"
+    android:orientation="vertical"
+    android:background="@color/mainclolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+	<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+		<ImageView
+		    android:id="@+id/btnre_page2_2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/btn_return"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="5dp"/>	
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_page2"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+<!-- 头底下的整个空间 -->    
+<LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+	<!-- 右边的控件 -->
+	<FrameLayout 
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:layout_gravity="top|right"
+		android:layout_marginTop="20.0dip"
+		android:layout_marginRight="0.0dip"
+	>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:orientation="horizontal"
+	>
+		<TextView 
+			android:id="@+id/Page2_2_cur_seek"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="¥"
+    		android:visibility="gone"
+    		android:layout_gravity="center_vertical"
+		/>
+		<LinearLayout 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+		>
+		<TextView 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="¥300+"
+		/>
+		<com.example.littles.VerticalSeekBar
+			android:id="@+id/Page2_2_seekbar"
+			android:layout_width="wrap_content"
+        	android:layout_height="80.0dip"
+        	android:max="100"
+        	android:progressDrawable="@drawable/seekbar_define_style"
+		/>
+		<TextView 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="¥0"
+		/>
+		</LinearLayout>
+	</LinearLayout>
+	</FrameLayout><!-- 右边的控件 -->
+
+<!-- 左边的纵条 -->	
+<LinearLayout 
+	android:layout_height="match_parent"
+	android:layout_width="wrap_content"
+>
+	<FrameLayout
+	   android:layout_height="wrap_content"
+	   android:layout_width="wrap_content"
+	   android:layout_marginBottom="100.0dip"
+	   android:layout_marginLeft="0.0dip"
+	   android:layout_gravity="bottom"
+	 >
+                
+      <LinearLayout 
+      	android:gravity="bottom|center" 
+      	android:layout_width="fill_parent" 
+      	android:layout_height="fill_parent">
+      
+      <ImageView 
+      	android:id="@+id/Page2_2_basket"
+      	android:clickable="true"
+      	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/basket_style"
+      />
+      </LinearLayout>
+      
+      <LinearLayout  
+      	android:gravity="top|right|center" 
+      	android:layout_width="fill_parent" 
+      	android:layout_height="fill_parent"
+      	android:layout_marginBottom="10.0dip"
+      	>
+          
+        <TextView
+          android:id="@+id/Page2_2_basket_num"
+          android:textSize="10.0dip" 
+          android:text="0" 
+          android:textColor="#ffffff" 
+          android:gravity="center"
+          android:background="@drawable/circle" 
+          android:visibility="invisible"
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content" 
+         />
+      </LinearLayout>
+      </FrameLayout>
+</LinearLayout><!-- 左边的纵条 -->	
+
+<!-- <LinearLayout  -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content"> -->
+<!--     <RelativeLayout  -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginBottom="20dp" -->
+<!--         android:layout_marginRight="20dp" -->
+<!--         android:layout_gravity="right"> -->
+<!--         <ImageView -->
+<!--             android:layout_width="100dp" -->
+<!--             android:layout_height="100dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:clickable="true" -->
+<!--             android:src="@drawable/icon_left"  -->
+<!--             android:layout_toLeftOf="@+id/goodspagenum2"/>    -->
+            
+<!--         <TextView -->
+<!--             android:id="@+id/goodspagenum2" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_gravity="center_vertical" -->
+<!--             android:clickable="true" -->
+<!--             android:text="1" -->
+<!--             android:gravity="center_vertical|center_horizontal" /> -->
+	
+<!--         <ImageView -->
+<!--             android:layout_width="100dp" -->
+<!--             android:layout_height="100dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:clickable="true" -->
+<!--             android:src="@drawable/icon_right"  -->
+<!--             android:layout_toRightOf="@+id/goodspagenum2"/>            -->
+<!--     </RelativeLayout> -->
+<!-- </LinearLayout> -->
+  
+</LinearLayout><!-- 头底下的整个空间 -->
+
+</LinearLayout><!-- 整个线性布局 -->
